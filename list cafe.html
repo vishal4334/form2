@@ -1,0 +1,43 @@
+
+<style>
+    .form-label{
+        color: rgb(245, 248, 248);
+        margin-top: 100px;
+        margin-right: 100px;
+    }
+    .form-input{
+        color: rgb(231, 10, 231);
+
+    }
+    .form-heading{
+        color: rgb(12, 12, 12);
+    }
+    .form-message form-success{
+        color: azure;
+    }
+    body{
+background-image: url("https://wallpapercave.com/dwp1x/wp11934998.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+body{
+margin-left: 200px;
+margin-top: 250px;
+}
+</style>
+<div class="form-container">
+    <h2 class="form-heading">RESTRO BAR</h2>
+    <form action="submit.php" method="POST">
+      <label class="form-label" for="product">Product:</label>
+      <input class="form-input" type="text" id="product" name="product" required>
+  
+      <label  class="form-label"  for="quantity">Quantity:</label>
+      <input class="form-input" type="number" id="quantity" name="quantity" required>
+  
+      <button class="form-submit" type="submit">Place Order</button>
+    </form>
+  
+    <!-- Display success or error messages here -->
+    <div class="form-message form-success">Order placed successfully!</div>
+  </div>
+  
